@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int radius = 0;
+    float const pi = 3.14;
+    float area = 0.0;
+
+    printf("Enter the radius of the circle:");
+    scanf("%d", &radius);
+
+    area = pi * radius * radius;
+
+    printf("Area of the circle is: %f", area);
+
+    return 0;
+}
+
+/* wrote a code to find out the area of the circle by taking the radius as the input from the user
+Pretty basic but couldn't think of anything else to start with so wrote this one, but it's definitely useful.
+And I'll definitely write some big and complex codes after this in coming days, but since it's day 1 so Day 1, I got you, and the 
+rest 99 days are definitely gonna be fabulous.*/
