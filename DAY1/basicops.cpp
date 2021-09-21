@@ -1,4 +1,4 @@
-//basic operations of stack
+//basic operations of stack using array
 
 #include<iostream>
 
