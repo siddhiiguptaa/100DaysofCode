@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>PATTERN PRINT</title>
+</head>
+<body>
+<h1 style="text-align:center">STAR PATTERN PRINT</h1>
+<p style="text-align:center">
+<?php
+$row_length = 4;
+//uppersection
+for ($row = 0; $row < $row_length; $row++)
+{
+//leftsection
+for ($column = 1; $column <= $row_length - $row; $column++)
+
+{
+
+echo "*&nbsp;";
+}
+for ($spaces = 0; $spaces < $row; $spaces++)
+
+{
+
+echo "&nbsp;&nbsp;&nbsp;";
+}
+//rightsection
+for ($spaces = 0; $spaces < $row; $spaces++)
+
+{
+
+echo "&nbsp;&nbsp;&nbsp;";
+}
+for ($column = $row_length - $row; $column >= 1; $column--)
+
+{
+
+echo "*&nbsp;";
+}
+echo '<br>';
+}
+//lowersection
+for ($row = 2; $row <= $row_length; $row++)
+{
+for ($column = 1; $column <= $row; $column++)
+
+{
+
+echo "*&nbsp;";
+}
+for ($spaces = 0; $spaces < $row_length - $row; $spaces++)
+
+{
+
+echo "&nbsp;&nbsp;&nbsp;";
+}
+
+for ($spaces = 1; $spaces <= $row_length - $row; $spaces++)
+
+{
+
+echo "&nbsp;&nbsp;&nbsp;";
+}
+for ($column = 1; $column <= $row; $column++)
+
+{
+
+echo "*&nbsp;";
+}
+echo '<br>';
+}
+?>
+</p>
+</body>
+</html>
