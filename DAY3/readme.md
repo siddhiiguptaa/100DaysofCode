@@ -57,3 +57,30 @@ Today for coding practice I'll practice a few classic star patterns formation us
    ***
     *
 ```
+
+``` python
+------------Pattern 7---------
+*****
+ *****
+  *****
+   *****
+    *****
+```
+
+``` python
+------------Pattern 8---------
+     *****
+    *****
+   *****
+  *****
+ *****
+```
+
+``` python
+------------Pattern 9---------
+     *
+    **
+   * *
+  *  *
+ *****
+```
