@@ -84,3 +84,33 @@ Today for coding practice I'll practice a few classic star patterns formation us
   *  *
  *****
 ```
+
+``` python
+------------Pattern 10---------
+*
+**
+* *
+*  *
+*****
+```
+
+``` python
+------------Pattern 11---------
+*****
+*  *
+* *
+**
+*
+```
+
+``` python
+------------Pattern 12---------
+*****
+*   *
+ *  *
+  * *
+    *
+```
+
+``` python
+```
