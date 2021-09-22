@@ -201,3 +201,12 @@ Today for coding practice I'll practice a few classic star patterns formation us
  *   *   *
 *    *    *
 ```
+
+``` python
+------------Pattern 21---------
+*      
+*
+*
+*
+*******
+```
