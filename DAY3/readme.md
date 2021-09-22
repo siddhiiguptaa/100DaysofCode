@@ -113,4 +113,32 @@ Today for coding practice I'll practice a few classic star patterns formation us
 ```
 
 ``` python
+------------Pattern 13---------
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+
+``` python
+------------Pattern 14---------
+*********
+*      *
+ *    *
+  *  *
+    *
+```
+
+``` python
+------------Pattern 15---------
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
 ```
