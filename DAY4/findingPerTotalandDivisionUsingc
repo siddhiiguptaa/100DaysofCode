@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int science, maths, english, total;
+    float per;
+
+    /*Taking marks as input from the user*/
+    
+    printf("Enter science marks: ");
+    scanf("%d", &science);
+
+    printf("Enter maths marks: ");
+    scanf("%d", &maths);
+
+    printf("Enter english marks: ");
+    scanf("%d", &english);
+
+    /*Printing out the total and percentage*/
+    
+    total = science + maths + english;
+    per = (float)total*100/300;
+
+    printf("Total marks are: %d\n", total);
+    printf("Percentage is: %f\n", per);
+
+    /*Alloting division according to the marks given as input*/
+    
+    if(per >= 60)
+        printf("Division A\n");
+    else if (per >= 50)
+        printf("Division B\n");
+    else if (per >= 40)
+        printf("Division C\n");
+    else
+        printf("Fail\n");
+
+    return 0;
+}
+
+/*Wrote this program, pretty short and basic, but it required the correct the logic to give the proper output, would definitely write bigger and complex codes in the coming days. I guess I landed upto your expectations of Day 4, or atleast somewhere near to it, alot more to go, till then keep supporting and guiding.*/
