@@ -1,0 +1,22 @@
+class Solution:
+    def maxCandy(self, height, n): 
+        # Your code goes here
+        start=0
+        end=n-1
+        m_ar=0
+        ar=0
+        while(start<end):
+            ar=min(height[start],height[end])*(end-start-1)
+            m_ar=max(ar,m_ar)
+            if(height[start]<height[end]):
+                start=start+1
+            else:
+                end=end-1
+        return m_ar
+if __name__='__main__':
+    t=int(input())
+    for _  in range(t):
+        n=int(input())
+        arr=list(map(int,input().strip().split()))
+        obj=Solution()
+        print(obj.maxCandy(arr,n))

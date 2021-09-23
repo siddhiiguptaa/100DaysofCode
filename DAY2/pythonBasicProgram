@@ -1,0 +1,9 @@
+def main():
+    print("Hello World")
+    name = input("What is your name? ")
+    print("Nice to meet you,", name)
+
+if __name__ == "__main__":
+    main()
+    
+    #this is the first python code that i've learnt, would definitely write some complex and big codes of python in coming days, but now please just bear with me, won't let either myself or you down. Thank you for support and please keep guiding.

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple switch example</title>
+  </head>
+  <body>
+    <label for="DAY">Select the DAY today: </label>
+    <select id="weather">
+      <option value="">--Make a choice--</option>
+      <option value="holiday">Holiday</option>     
+      <option value="fullday">Full Day</option>
+      <option value="halfday">Half Day</option>
+    </select>
+
+    <p></p>
+
+    <script>
+      const select = document.querySelector('select');
+      const para = document.querySelector('p');
+      let temperature = 29;
+
+      select.onchange = setDay;
+
+      function setDay() {
+        const choice = select.value;
+
+        switch(choice) {
+          case 'holiday':
+            para.textContent = 'Its a holiday today, ENJOYYY!!!!';
+            break;
+          case 'fullday':
+            para.textContent = 'ALL THE BEST for your day, your hardwork will pay off !.';
+            break;
+          case 'halfday':
+            para.textContent = 'You can enjoy lunch-time with your family today. Enjoy your FAMILY TIME! ';
+            break;
+         
+          default:
+            para.textContent = '';
+        }
+      }
+    </script>
+  </body>
+</html>
