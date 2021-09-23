@@ -30,6 +30,13 @@ def singleStairsPattern(num):
         print()
 
 
-singleStairsPattern(1)
+# singleStairsPattern(1)
 
-# stairsPattern(1)
+def multipleStairsPattern(num):
+    width = num * 6
+
+    for i in range(width - 1, width - 2, -1):
+        for j1 in range():
+            print("#", end=" ")
+
+multipleStairsPattern(1)
