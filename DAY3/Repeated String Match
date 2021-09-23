@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+sing namespace std;
+
+class Solution
+{
+    public:
+    int repeatedStringMatch(string A, string B) 
+    {
+        // Your code goes here
+        int r = 1;
+        int ct = B.length()/A.length();
+        
+        string s = A;
+        for(int i=0; i<=ct+2; i++)
+        {
+            if(s.find(B) != string::npos)
+            {
+                return r;
+            }
+            else
+            {
+                s += A;
+                r++;
+            }
+        }
+        return -1;
+    }
+  
+};
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string A,B;
+        cin>>A;
+        cin>>B;
+        Solution obj;
+        cout<<onj.repeatedStringMatch(A,B)<<"\n";
+    }
+    return 0;
+}    
