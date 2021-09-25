@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, n, sum;
+    float avg;
+
+    printf("Enter the first number: ");
+    scanf("%d", &a);
+
+    printf("Enter the second number: ");
+    scanf("%d", &b);
+
+    printf("Enter the third number: ");
+    scanf("%d", &c);
+
+    printf("Enter the nth number: ");
+    scanf("%d", &n);
+
+    sum = a + b + c + n;
+    avg = (float)(a + b + c + n)/4;
+
+    printf("\nSum of %d, %d, %d and %d is: %d", a, b, c, n, sum);
+    printf("\nAverage of %d, %d, %d and %d is: %f", a, b, c, n, avg);
+
+
+    return 0;
+}
+/*Followed your advise, wrote a bigger program not pretty complex but yes it's useful and not basic, will write more complex and bigger programs in the coming days. If something's missing in this or if you want me to write/code something else, then please lemme know, I'd definitely follow your advise. Till then keep supporting and guiding me.*/

@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int choice;
+    float fh, cl;
+
+    printf("\n 1: Enter the temperature to be converted from Fahrenheit to Celsius.");
+    printf("\n 2: Enter the temperature to be converted from Celsius to Fahrenheit.");
+    printf("\n\n Enter your choice (1, 2): ");
+    scanf("%d", &choice);
+
+    if (choice == 1)
+    {
+        printf("\n Enter the temperature in Fahrenheit: ");
+        scanf("%f", &fh);
+        cl = (fh - 32)/1.8;
+        printf("\n Temperature in Celsius is: %.2f", cl);
+    }
+    else if (choice == 2)
+    {
+        printf("\n Enter the temperature in Celsius: ");
+        scanf("%f", &cl);
+        fh = (cl * 1.8) + 32;
+        printf("\n Temperature is Fahrenheit is: %.2f", fh);
+    }
+    else
+        printf("\n Invalid choice");
+
+
+    return 0;
+}
+
+/*Wrote this code, short, crisp and to the point, will start with arrays, functions, pointers and structures from tomorrow. If you want or think I need to improvise on something or code in a diferent way like start writing the complex one's now, then please let me, I'll definitely do that. Till then keep supporting and guiding.*/
