@@ -28,3 +28,5 @@ const fiboEvenSum = (number) => {
     return evenSum;
   }
 };
+
+console.log(fiboEvenSum(3));
