@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 
 app.get('*', (req, res) => {
     res.json({
-        data:'you received  nodejs api for react node crud app'
+        data:'You received nodejs api for react node crud app'
     })
 })
 
