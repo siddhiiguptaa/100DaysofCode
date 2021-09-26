@@ -9,19 +9,18 @@ export default function Create() {
         user: ''
     })
 
-    // destructure values from state
     
-    const handleChange = (event) => {
-        const{name, value} = event.target
-        console.log ('name',name,'value',value)
-        setState((prevState) =>{
-            return {
-                ...prevState,
-                [name]: value
-            }
+    // destructure values from state
+    function handleChange(evt) {
+        const value = evt.target.value;
+        console.log('name',evt.target.name,'value',value)
+        setState( {
+
+            [evt.target.name] : value
         })
-    }
+}
     const {title, content, user} = state
+    
   return (
 
     <div className="container p-5">
@@ -37,6 +36,7 @@ export default function Create() {
                 <input 
                     onChange = {handleChange}
                     value = {title}
+                    name="title"
                     type="text" 
                     className="form-control" 
                     placeholder="Post Title" 
@@ -55,7 +55,8 @@ export default function Create() {
                     type="text" 
                     className="form-control" 
                     placeholder="Write something..." 
-                    required name="content-textarea">
+                    name="content"
+                    required >
                 
                 </textarea>
             </div>
@@ -69,6 +70,7 @@ export default function Create() {
                 <input 
                     onChange = {handleChange}
                     value = {user}
+                    name="user"
                     type="text" 
                     className="form-control" 
                     placeholder="username" 
