@@ -6,6 +6,10 @@ const mongoose = require('mongoose')
 
 require('dotenv').config()
 
+// import routes
+
+const postRoutes = require('./routes/post')
+
 // application invoking express in app
 const app = express()
 
@@ -25,14 +29,18 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 
-// routes
+// routes middleware
 
-app.get('*', (req, res) => {
-    res.json({
-        data:'You received nodejs api for react node crud app'
+app.use('/api', postRoutes)
+/**
+ * 
+ app.get('*', (req, res) => {
+     res.json({
+         data:'You received nodejs api for react node crud app'
+        })
     })
-})
-
+    
+*/
 // port variable
 const port = process.env.PORT || 8000
 app.listen(port, () => console.log(`The server is running on port ${port}`))
