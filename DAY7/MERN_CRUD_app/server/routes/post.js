@@ -1,11 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
+const { create } = require('../controllers/post')
 
-router.get('/', (req, res) => {
-    res.json({
-        data:'You received nodejs api for react node crud app'
-    })
-})
+router.get('/post', create )
 
 module.exports = router
