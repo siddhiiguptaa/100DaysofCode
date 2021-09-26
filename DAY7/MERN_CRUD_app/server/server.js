@@ -9,6 +9,17 @@ require('dotenv').config()
 // application invoking express in app
 const app = express()
 
+//connect to database
+
+mongoose.connect(process.env.DATABASE_URL, {
+        useNewUrlParser: true,
+        // useCreateIndex: true,
+        // useFindAndModify: false,
+        useUnifiedTopology: true
+
+})
+        .then(() => console.log('DATABASE CONNECTED !'))
+
 // middleware request and response 
 app.use(cors())
 app.use(morgan('dev'))
