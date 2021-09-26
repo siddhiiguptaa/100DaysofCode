@@ -15,7 +15,7 @@ export default function Create() {
         const value = evt.target.value;
         console.log('name',evt.target.name,'value',value)
         setState( {
-
+            ...state,
             [evt.target.name] : value
         })
 }
@@ -26,6 +26,7 @@ export default function Create() {
     <div className="container p-5">
       <h1>CREATE POST</h1>
       <br />
+      {JSON.stringify(state)}
       <form>
             <div className="form-group mb-3">
                 <label 
