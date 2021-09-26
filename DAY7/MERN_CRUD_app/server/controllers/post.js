@@ -1,5 +1,6 @@
+const Post = require('../models/post')
+
 exports.create = (req, res) => {
-    res.json({
-        data: 'Controllers connection successful!'
-    })
+    // console.log(req.body);
+    // return 
 }
