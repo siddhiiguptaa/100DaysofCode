@@ -1,9 +1,13 @@
 import React from 'react'
+// import { BrowserRouter as Router} from "react-router-dom";
+
 
 export default function App() {
   return (
-    <div>
-      <h1>MERN CRUD</h1>
+
+    <div className="container p-5">
+      <h1>MERN CRUD App</h1>
     </div>
+ 
   )
 }
