@@ -13,12 +13,12 @@
 
 function permAlone(str) {
   // Create a regex to match repeated consecutive characters.
-  var regex = /(.)\1+/;
+  let regex = /(.)\1+/;
 
   // Split the string into an array of characters.
-  var arr = str.split("");
-  var permutations = [];
-  var tmp;
+  let arr = str.split("");
+  let permutations = [];
+  let tmp;
 
   // Return 0 if str contains same character.
   if (str.match(regex) !== null && str.match(regex)[0] === str) return 0;
@@ -36,7 +36,7 @@ function permAlone(str) {
       // Make sure to join the characters as we create  the permutation arrays
       permutations.push(arr.join(""));
     } else {
-      for (var i = 0; i != int; ++i) {
+      for (let i = 0; i != int; ++i) {
         generate(int - 1);
         swap(int % 2 ? 0 : i, int - 1);
       }
@@ -46,7 +46,7 @@ function permAlone(str) {
   generate(arr.length);
 
   // Filter the array of repeated permutations.
-  var filtered = permutations.filter(function(string) {
+  let filtered = permutations.filter(function(string) {
     return !string.match(regex);
   });
 
