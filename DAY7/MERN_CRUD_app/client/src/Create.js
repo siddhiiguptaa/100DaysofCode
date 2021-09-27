@@ -26,8 +26,8 @@ export default function Create() {
             event.preventDefault()
         // console.table({title, content, user})
         axios
-            // .post(`${process.env.REACT_APP_API}/post`, 
-            .post(`http://localhost:8000/api/post`, 
+            .post(`${process.env.REACT_APP_API}/post`, 
+            // .post(`http://localhost:8000/api/post`, 
                     {title, content, user})
             .then(response => {
                 // to empty the state after submit
@@ -51,7 +51,8 @@ export default function Create() {
     <div className="container p-5">
       <h1>CREATE POST</h1>
       <br />
-      {JSON.stringify(state)}
+      {/* use the line below to check for the handle submit results */}
+      {/* {JSON.stringify(state)} */}
       <form onSubmit={handleSubmit}>
             <div className="form-group mb-3">
                 <label 
