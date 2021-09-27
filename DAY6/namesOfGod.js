@@ -22,5 +22,5 @@
  * Where row  n  corresponds to integer  n , 
    and each column  C  in row  m  from left to right corresponds to 
    the number of names beginning with  C .
-   
+
  */
