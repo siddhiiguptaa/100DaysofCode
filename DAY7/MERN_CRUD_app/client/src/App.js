@@ -1,6 +1,7 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios'
 import Nav from './Nav'
+import { Link } from 'react-router-dom'
 
 
 export default function App() {
@@ -31,21 +32,23 @@ export default function App() {
       <h1>
         MERN CRUD App
       </h1>
-      <br/>
+      <hr/>
       {posts.map((post, i) => (
-        <div className="row">
+        <div className="row" key = {post._id} style = {{ borderBottom: '1px solid silver' }}>
           <div className="col pt-3 pb-2">
-            <h2>
-              {post.title}
-            </h2>
+            <Link to={`/post/${post.slug}`}>
+              <h2>
+                {post.title}
+              </h2>
+            </Link>
             <p className="lead">
-              {post.content}
+              {post.content.substring(0, 100)}
             </p>
             <p>
-              Author <span className="badge">
+              Author <span className="badge bg-light text-dark">
                 {post.user}
               </span> Published on {' '}
-              <span className="badge">
+              <span className="badge bg-secondary">
                 {new Date(post.createdAt).toLocaleString()}
               </span>
             </p>
