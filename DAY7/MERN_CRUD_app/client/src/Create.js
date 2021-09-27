@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 // import { BrowserRouter as Router} from "react-router-dom";
 
 
@@ -13,7 +14,7 @@ export default function Create() {
     // destructure values from state
     function handleChange(evt) {
         const value = evt.target.value;
-        console.log('name',evt.target.name,'value',value)
+        // console.log('name',evt.target.name,'value',value)
         setState( {
             ...state,
             [evt.target.name] : value
@@ -21,13 +22,37 @@ export default function Create() {
 }
     const {title, content, user} = state
     
+    function handleSubmit(event) {
+            event.preventDefault()
+        // console.table({title, content, user})
+        axios
+            // .post(`${process.env.REACT_APP_API}/post`, 
+            .post(`http://localhost:8000/api/post`, 
+                    {title, content, user})
+            .then(response => {
+                // to empty the state after submit
+                console.log(response)
+                setState({...state,
+                            title:'',
+                            content:'',
+                            user: ''})
+                // on successful completion of the request show alert
+                alert(`Post titled ${response.data.title} is created successfully.`)
+             })
+             .catch((error) => {
+                 console.log(error.response)
+                 alert(error.response.data.error)
+             })
+    }
+
+    
   return (
 
     <div className="container p-5">
       <h1>CREATE POST</h1>
       <br />
       {JSON.stringify(state)}
-      <form>
+      <form onSubmit={handleSubmit}>
             <div className="form-group mb-3">
                 <label 
                     htmlFor="title" 
