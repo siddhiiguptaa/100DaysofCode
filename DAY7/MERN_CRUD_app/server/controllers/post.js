@@ -22,3 +22,14 @@ exports.create = (req, res) => {
             res.json(post);
         });
 }
+
+exports.list = function (req, res) {
+    Post
+        .find({})
+        .limit(10) //limits the posts to a certain number
+        .sort({createdAt: -1}) //for the posts to come in ascending order by time created
+        .exec(function (err, posts) {
+            if(err) return console.error(err)
+            res.json(posts)
+        })
+}
