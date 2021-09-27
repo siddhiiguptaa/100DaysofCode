@@ -55,4 +55,4 @@ function permAlone(str) {
 }
 
 // Test here.
-permAlone("aab");
+console.log((permAlone("aab"))) //should return 2 
