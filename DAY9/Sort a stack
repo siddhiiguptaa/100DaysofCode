@@ -1,0 +1,22 @@
+class Solution:
+    # your task is to complete this function
+    # function sort the stack such that top element is max
+    # funciton should return nothing
+    # s is a stack
+    def sorted(self, s):
+        # Code here
+        a = len(s)
+        if a==0 or a==1:
+            return s
+        s.sort(reverse = True)
+        return s
+if __name__='__main__':
+    t=int(input())
+    for i in range(t):
+        n=int(input())
+        arr=list(map(int,input().strio().split()))
+        ob=Solution()
+        ob.sorted(arr)
+        for e in range(len(arr)):
+            print(arr.pop(0),end=" ")
+        print()
