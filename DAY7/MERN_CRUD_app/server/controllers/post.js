@@ -2,7 +2,7 @@ const Post = require('../models/post')
 const slugify = require('slugify')
 
 exports.create = (req, res) => {
-    const { title, content, user } = req.body;
+    const { title, content, user } = req.body; //req.params
         const slug = slugify(title);
         // validate
         switch (true) {
@@ -32,4 +32,15 @@ exports.list = function (req, res) {
             if(err) return console.error(err)
             res.json(posts)
         })
-}
+
+    }
+exports.read = function (req, res) {
+    const { slug } = req.params
+    
+    Post
+        .findOne({slug: slug})
+        .exec(function (err, posts) {
+            if(err) return console.error(err)
+            res.json(posts)
+        })
+    }
