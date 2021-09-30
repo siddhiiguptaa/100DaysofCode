@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <textarea 
+        autoFocus
         className="textarea" 
         value={ input } 
         onChange={ 
@@ -19,18 +20,22 @@ function App() {
         <ReactMarkdown 
           children= { input } 
           className="markdown"
-          components ={{code : Component}}/>
+          components ={{
+              code : Component,
+              }}/>
     </div>
   )
 }
 
-export default App;
 
 
 const Component = (value, language) => {
   return (
     <SyntaxHighlighter language={language ?? null} style={docco}>
-      {value ?? null}
+      {value ?? " "} {/**Nullish coalescing operator (??)*/}
     </SyntaxHighlighter>
   );
 };
+
+
+export default App;
