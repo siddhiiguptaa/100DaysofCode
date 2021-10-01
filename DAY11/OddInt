@@ -1,0 +1,30 @@
+//  find the one that appears an odd number of times in an array
+
+using System;
+using System.Linq;
+					
+public class Program
+{
+	public static void Main()
+	{
+		var x = Program.FindOddInt(new int[] {1, 2, 1, 2, 3});
+		Console.WriteLine($"Odd int: {x}");
+	}
+	
+	public static int FindOddInt(int[] seq) 
+      {
+      Array.Sort(seq);
+            var seqDistinct = seq.Distinct();
+            foreach (var item in seqDistinct)
+            {
+                var count = seq.Where(z => z == item).Count();
+                if (count % 2 != 0)
+                {
+                    return item;
+                }
+
+            }
+            return -1;
+      }
+}
+
