@@ -1,0 +1,16 @@
+.App {
+  display:flex;
+}
+.textarea {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  font-size: 2rem;
+  outline: none;
+}
+
+.markdown {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+}
