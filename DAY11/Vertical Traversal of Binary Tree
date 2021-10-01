@@ -1,0 +1,37 @@
+class Solution:
+    
+    #Function to find the vertical order traversal of Binary Tree.
+    def verticalOrder(self, root): 
+        #Your code here
+        def traverse(root, x = 0, y = 0):
+            if root is None:
+                return
+            
+            nonlocal mini
+            if mini > y:
+                mini = y
+            
+            if hashMap.get(y) is None:
+                hashMap[y] = {x: [root.data]}
+            else:
+                if hashMap[y].get(x) is None:
+                    hashMap[y][x] = [root.data]
+                else:
+                    hashMap[y][x].append(root.data)
+                
+            traverse(root.left, x + 1, y - 1)
+            traverse(root.right, x + 1, y + 1)
+         
+        hashMap = {}
+        mini = 0
+        traverse(root)
+        
+        res = []
+        #print(hashMap)
+        while hashMap.get(mini):
+            for i in sorted(hashMap[mini]):
+                res += hashMap[mini][i]
+            mini += 1
+        
+        return res
+#driver code

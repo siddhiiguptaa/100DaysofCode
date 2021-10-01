@@ -1,0 +1,22 @@
+class Solution:
+    def maxLen(self, n, arr):
+        #Code here
+        dict={}
+        ps=0
+        ml=0
+        for i in range(n):
+            ps+=arr[i]
+            if ps==0:
+                ml=i+1
+            if ps in dict:
+                ml=max(ml,i-dict[ps])
+            else:
+                dict[ps]=i
+        return ml
+if __name__='__main__':
+    t=int(input())
+    for i in range(t):
+        n=int(input())
+        arr=list(map(int,input().strip().split()))
+        ob=Solution()
+        print(ob.maxLen(n,arr)) 
