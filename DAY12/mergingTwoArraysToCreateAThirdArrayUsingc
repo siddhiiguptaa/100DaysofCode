@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int array_1[30] = {0};
+    int array_2[30] = {0};
+
+    int *c;
+
+    int i = 0, j = 0, k = 0, x = 0, y = 0, z = 0;
+
+    printf("\nEnter the number of elements.");
+    printf("\nFor array_1: ");
+    scanf("%d", &x);
+
+    printf("\nFor array_2: ");
+    scanf("%d", &y);
+
+    printf("\nEnter the elements for array_1: ");
+    for (i = 0; i < x; i++)
+    {
+        printf("array_1[%d]: ", i);
+        scanf("%d", &array_1[i]);
+    }
+
+    printf("\nEnter the elements for array_2: ");
+    for (i = 0; i < y; i++)
+    {
+        printf("array_2[%d]: ", i);
+        scanf("%d", &array_2[i]);
+    }
+
+    z = x + y;
+
+    printf("\nTotal elements are: %d\n", z);
+
+    c = (int*)malloc(z * sizeof(int));
+
+    for(i = 0, j = 0, k = 0; i < z, j < x, k < y; i++)
+    {
+        c[i] = array_1[j++];
+        if(i >= x)
+        {
+            c[i] = array_2[k++];
+        }
+    }
+
+    printf("\nThe final array after merging the two arrays is.....");
+    for (i = 0; i < z; i++)
+    {
+        printf("\nC[%d]: %d", i, c[i]);
+    }
+
+    return 0;
+}
+/*Used pointers with arrays.*/
