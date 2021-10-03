@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
+}
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #F97300;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: #F97300;
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+section{
+    display: flex !important;
+}
+.container {
+    margin-top: 15%;
+}
+.img-text {
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #464646;
+    color: #f4f4f4;
+    border-radius: 15px;
+}
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-text p{
+    font-size: 14px;
+}
+
+.single-box {
+    position: relative;
+}
+.img-area{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+.img-area img{
+    width: 100%;
+}
+
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+.carousel-indicators li{
+    background: #040404;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active{
+    background: #f4f4f4
+}
