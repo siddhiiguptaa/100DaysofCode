@@ -1,0 +1,24 @@
+class Solution:
+    
+    #Function to detect cycle in an undirected graph.
+	def isCycle(self, V, adj):
+		#Code here
+		vis = [0]*V
+		
+		def dfs(cur, parent):
+		    vis[cur] = 1
+		    
+		    for i in adj[cur]:
+		        if not vis[i]:
+		            if dfs(i, cur): return True
+		        elif i != parent:
+		            return True
+		            
+		    return False
+		
+		for i in range(V):
+		    if not vis[i]:
+		        if dfs(i, -1): return True
+		        
+		return False
+#driver code
