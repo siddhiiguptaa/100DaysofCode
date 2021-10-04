@@ -20,7 +20,7 @@ function newQuotes(){
         authorText.textContent = quotes.author;
     }
     // check quote length to determine styling 
-    if (quotes.text.length > 50){
+    if (quotes.text.length > 70){
         quoteText.classList.add('long-quote');
     }
     else{
@@ -41,6 +41,15 @@ async function getQuotes() {
         // catch error here
     }
 }
+// to use web intent url for tweeets
 
-// On load
+function tweetQuote() {
+    const twitterURL = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`
+    window.open(twitterURL, '_blank'); //blank to open the window in new tab
+}
+
+newQuotesBtn.addEventListener('click', newQuotes)
+twitterBtn.addEventListener('click', tweetQuote)
+
+// On page reload
 getQuotes();
