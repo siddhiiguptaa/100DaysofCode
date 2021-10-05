@@ -1,5 +1,3 @@
-// require('dotenv').config(); 
-const { API_KEY } = envy(); 
 
 const count = 2
 const API_KEY = process.env.API_KEY
