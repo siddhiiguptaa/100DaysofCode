@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// require('dotenv').config(); 
+>>>>>>> parent of 9172248 (added webpack)
 
 const count = 2
 const API_KEY = process.env.API_KEY
