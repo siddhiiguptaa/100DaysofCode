@@ -6,26 +6,26 @@
  * A complete alphabet is guaranteed amongst all sides of the blocks. 
  * The sample collection of blocks:
  * 
-    (B O)
-    (X K)
-    (D Q)
-    (C P)
-    (N A)
-    (G T)
-    (R E)
-    (T G)
-    (Q D)
-    (F S)
-    (J W)
-    (H U)
-    (V I)
-    (A N)
-    (O B)
-    (E R)
-    (F S)
-    (L Y)
-    (P C)
-    (Z M)
+    [B O]
+    [X K]
+    [D Q]
+    [C P]
+    [N A]
+    [G T]
+    [R E]
+    [T G]
+    [Q D]
+    [F S]
+    [J W]
+    [H U]
+    [V I]
+    [A N]
+    [O B]
+    [E R]
+    [F S]
+    [L Y]
+    [P C]
+    [Z M]
 
  * Implement a function that takes a string (word) and determines 
     whether the word can be spelled with the given collection of blocks.
@@ -64,4 +64,18 @@ function canMakeWord(word) {
   return true
 }
 
-console.log(canMakeWord("bark"))
+console.log(canMakeWord("bark")) //should return true 
+
+/**
+canMakeWord("bark") should return true.
+
+canMakeWord("BooK") should return false.
+
+canMakeWord("TReAT") should return true.
+
+canMakeWord("COMMON") should return false.
+
+canMakeWord("squAD") should return true.
+
+canMakeWord("conFUSE") should return true.
+ */
