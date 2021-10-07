@@ -52,7 +52,16 @@ function canMakeWord(word) {
       const blockIndex = blocksArr.findIndex(
           (block) => block.indexOf(word[letter]) >= 0
       )
-        (blockIndex === -1) ? false : blocksArr.splice(blockIndex,1)
+        // (blockIndex == -1) ? false : blocksArr.splice(blockIndex,1)
+        if (blockIndex == -1) {
+      // Return false if no blocks contains letter
+            return false;
+    } else {
+      // Otherwise, remove the block
+      blocksArr.splice(blockIndex, 1);
+    }
   }
   return true
 }
+
+console.log(canMakeWord("bark"))
