@@ -1,0 +1,8 @@
+class Solution:
+    def maxFrequency(self, S):
+        # code here
+        for i in range(1, len(S)):
+            if S[:i] == S[len(S) - i:]:
+                return S.count(S[:i])
+        return 1
+#driver code
