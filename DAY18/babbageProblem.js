@@ -28,9 +28,9 @@ function isBabbageNumber(testVal, endDigits) {
 }
 
 function babbage(babbageNum, endDigits) {
-    const start = Math.floor(Math.sqrt(endDigits))  
+    const start = Math.floor(Math.sqrt(endDigits))  //as it can't be less the sqrt of the end digits
     for (let index = start; index <= babbageNum; index++) {
-        if (isBabbageNumber(index, endDigits)) {
+        if (isBabbageNumber(index, endDigits)) { //check against each number until it matches
             return index 
         }
     }
