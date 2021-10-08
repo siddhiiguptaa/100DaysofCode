@@ -17,4 +17,12 @@
  * satisfies the Babbage problem. If Babbage was right, return Babbage's number.
  */
 
-   
+//    check if the number is the babbage number by checking the end if it matches with 
+// the provided number. 269,696
+
+function isBabbageNumber(testVal, endDigits) {
+    const endStr = '' + endDigits
+    const squareStr = ('' + Math.pow(testVal,2))
+                        .slice(-endStr.length)
+    return endStr === squareStr //if true then babbage 
+}
