@@ -26,3 +26,14 @@ function isBabbageNumber(testVal, endDigits) {
                         .slice(-endStr.length)
     return endStr === squareStr //if true then babbage 
 }
+
+function babbage(babbageNum, endDigits) {
+    const start = Math.floor(Math.sqrt(endDigits))  
+    for (let index = start; index <= babbageNum; index++) {
+        if (isBabbageNumber(index, endDigits)) {
+            return index 
+        }
+    }
+}
+
+console.log(babbage(99736, 269696)); 
