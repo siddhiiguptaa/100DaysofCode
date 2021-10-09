@@ -1,0 +1,49 @@
+class Solution{
+
+	public:
+	int findK(vector<vector<int>> &matrix, int r, int c, int k)
+    {
+        // Your code goes here
+        vector <int> vr;
+        int left = 0, right = c - 1, top = 0, bottom = r - 1;
+        while(top <= bottom && left <= right)
+        {
+            for(int i = left; i <= right; i++)
+            {
+                vr.push_back(matrix[top][i]);
+            }
+            
+            top++;
+            
+            for(int i = top; i <= bottom; i++)
+            {
+                vr.push_back(matrix[i][right]);
+            }
+            
+            right--;
+            
+            if(top <= bottom)
+            {
+                for(int i = right; i >= left; i--)
+                {
+                    vr.push_back(matrix[bottom][i]);
+                }
+                
+                bottom--;
+            }
+            
+            if(left <= right)
+            {
+                for(int i = bottom; i >= top; i--)
+                {
+                    vr.push_back(matrix[i][left]);
+                }
+                
+                left++;
+            }
+        }
+        return vr[k-1];
+    }
+};
+
+#driver code
