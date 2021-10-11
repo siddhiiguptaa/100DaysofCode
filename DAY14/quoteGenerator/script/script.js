@@ -41,7 +41,7 @@ async function getQuotes() {
         // catch error here
     }
 }
-// to use web intent url for tweeets
+// to use web intent url for tweets
 
 function tweetQuote() {
     const twitterURL = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`
