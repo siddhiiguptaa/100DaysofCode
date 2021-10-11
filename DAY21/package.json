@@ -1,0 +1,23 @@
+{
+  "name": "student-crud",
+  "version": "1.0.0",
+  "description": "round 2 interview",
+  "main": "question.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "localStorage": "^1.0.4",
+    "localstorage-polyfill": "^1.0.1",
+    "parse": "^3.3.1",
+    "prompt-sync": "^4.2.0",
+    "stringify": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "database"
+  ],
+  "author": "abhishek",
+  "license": "MIT"
+}
