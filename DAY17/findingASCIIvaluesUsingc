@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main()
+{
+    char ch;
+    int asciiValue;
+ 
+    printf("Enter any character: ");
+    scanf("%c",&ch);
+ 
+    asciiValue=(int)ch;
+ 
+    printf("ASCII value of character: %c is: %d\n",ch,asciiValue);
+ 
+}
+/*This is a small program but i always had a doubt in finding out the ascii values so that's why wrote this one today. I guess it's fine because it helped me develop the logic for it. Let me know if there's anything. Till then keep supporting and guiding.*/
