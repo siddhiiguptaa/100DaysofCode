@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main(){
+    int count=0;
+    int num; 
+    int arr[100],i=0;
+     
+    while(num!=-1){
+        printf("Enter an integer number (-1 to exit): ");
+        count+=scanf("%d",&num);
+        arr[i++]=num;
+    }
+     
+    printf("\nTotal Inputs (including 0) are: %d\n",count);
+    printf("Entered numbers are:\n");
+    for(i=0;i<count;i++){
+        printf("%d ",arr[i]);
+    }
+     
+    printf("\n");
+    return 0;       
+}
+/*Too short of a program, i know, would definitely write bigger and more complex programs soon but for now just bear with me please and lemme know if there's anything. Till then keep supporting and guiding.*/
