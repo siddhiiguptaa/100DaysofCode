@@ -1,0 +1,36 @@
+class Solution{
+	
+	
+	public:
+	long long countTriplets(long long arr[], int n, long long sum)
+	{
+	    // Your code goes here
+	    long long c = 0;
+        if(n == 0)return c;
+    
+        sort(arr,arr+n);
+        for(int i = 0;i<n-2;i++)
+        {
+            int j = i+1;
+            int k = n-1;
+            while(j < k)
+            {
+                int s = arr[i]+arr[j]+arr[k];
+                if(s < sum)
+                {
+                    c+=(k-j);
+                    j++;
+                }
+                else
+                {
+                    k--;
+                }
+            }
+        }
+    return c;
+	}
+		 
+
+};
+
+#driver code
