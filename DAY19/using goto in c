@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+
+	int count,n;
+
+	//read value of N
+	printf("Enter value of n: ");
+	scanf("%d",&n);
+
+	//initialize count with N
+	count =n;
+
+	start: //label
+	printf("%d ",count);
+	count--;
+
+	if(count>=1)
+		goto start;
+
+	return 0;
+}
