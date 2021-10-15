@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-sequalize-markdown-blog",
+  "version": "1.0.0",
+  "description": "blog application using nodejs sequelize sammyjs and markdown parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "nodejs",
+    "sequelize",
+    "sammyjs",
+    "markdown"
+  ],
+  "author": "abhishek kumar",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sequelize": "^6.7.0",
+    "sql": "^0.78.0"
+  }
+}
