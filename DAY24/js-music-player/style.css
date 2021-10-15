@@ -21,12 +21,20 @@ body {
 
 
 .img-container {
-
+  height: 300px;
+  width: 300px;
   position: relative;
   top: -50px;
   left: 50px;
 }
 
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+    border-radius: 21px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.7)
+}
 
 h2 {
   font-size: 25px;
@@ -42,10 +50,12 @@ h3 {
   margin: 5px 0 0;
 }
 
-.progress-container{
+.player-container{
   height: 500px;
   width: 400px;
-  background-color: #d6d6d6
+  background-color: #d6d6d6;
+  border-radius: 21px;
+  box-shadow: 0 15px 30px 5px rgba(0,0,0,0.3)
 }
 
 /* Progress */
@@ -99,7 +109,9 @@ h3 {
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
-
+  .player-container{
+    width: 95vw;
+  }
 
   .img-container {
     left: 29px;
