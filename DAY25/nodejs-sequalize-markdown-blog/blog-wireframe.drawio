@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2021-10-15T12:42:13.847Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="MPgVsHAjHyOZfQ17lfUv" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-16T04:15:23.879Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="Ya6O3j1g5IGLqFVyGykf" version="15.5.3" type="github">
   <diagram name="Page-1" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
-    <mxGraphModel dx="4496" dy="1740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="6392" dy="3956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-53" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-53" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1180" y="560" width="730" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-44" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-44" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="1610" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-43" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-43" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1220" y="440" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry width="830" height="1170" as="geometry" />
         </mxCell>
         <mxCell id="13" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
@@ -34,13 +34,13 @@
         <mxCell id="21" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="20" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ugrp3_h8G9npWypkSd74-62" target="iazVjm7HrQ3wngAeaW7O-26">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ugrp3_h8G9npWypkSd74-62" target="iazVjm7HrQ3wngAeaW7O-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Ugrp3_h8G9npWypkSd74-62" value="Read More" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="148" y="300" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ugrp3_h8G9npWypkSd74-63" target="iazVjm7HrQ3wngAeaW7O-30">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ugrp3_h8G9npWypkSd74-63" target="iazVjm7HrQ3wngAeaW7O-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="413" y="410" />
@@ -101,64 +101,64 @@
         <mxCell id="Ugrp3_h8G9npWypkSd74-97" value="©abhishek kumar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="355" y="1120" width="117" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-26" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-26" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-1230" y="430" width="830" height="1170" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-7" y="1600" width="830" height="1170" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-33" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta possimus corporis, officiis asperiores quibusdam dolorem nisi aspernatur. Corrupti minus voluptatum placeat libero quisquam ea, totam cumque accusamus ab rerum, tempora quod voluptatibus magni. Quisquam, error. Facilis laudantium deserunt dolor vitae sed et accusantium hic, quas natus voluptatem consequuntur blanditiis repudiandae saepe, odit fugiat sint, amet itaque maiores inventore. Harum amet repellendus error voluptatum ut eaque dicta, saepe, tempora voluptatibus deleniti quaerat labore reprehenderit expedita dignissimos eius? Recusandae commodi officiis reprehenderit asperiores eum aut laborum quasi rem assumenda sequi nostrum quod in, error soluta harum natus veritatis animi quisquam doloremque laboriosam ratione. Tenetur assumenda sunt eius recusandae dolorem expedita impedit, praesentium quaerat voluptates quos porro repudiandae nobis dicta, architecto, adipisci asperiores. Enim, expedita. Beatae debitis incidunt atque recusandae aliquam ipsum optio laborum corrupti obcaecati, in libero eveniet necessitatibus, suscipit, consequuntur quaerat voluptates magnam ad. Quis aspernatur, corporis tenetur distinctio illum incidunt! Quidem distinctio magnam aut doloremque alias in soluta sequi nulla ipsam rem ad aliquid ullam magni commodi harum impedit nobis eius recusandae ut placeat, architecto natus velit. Vitae minima ratione atque quibusdam officia deserunt ipsam voluptatibus accusantium enim distinctio corrupti magnam facere cumque veritatis itaque eius fugiat, nam similique. Placeat nihil velit officia ad doloribus ipsam qui nulla expedita repudiandae! Modi nisi explicabo, quod commodi eum animi aliquam maiores doloribus omnis, culpa rem? Vero excepturi similique laboriosam cum praesentium explicabo nisi quod quas?&lt;p&gt;&amp;nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta possimus corporis, officiis asperiores quibusdam dolorem nisi aspernatur. Corrupti minus voluptatum placeat libero quisquam ea, totam cumque accusamus ab rerum, tempora quod voluptatibus magni. Quisquam, error. Facilis laudantium deserunt dolor vitae sed et accusantium hic, quas natus voluptatem consequuntur blanditiis repudiandae saepe, odit fugiat sint, amet itaque maiores inventore. Harum amet repellendus error voluptatum ut eaque dicta, saepe, tempora voluptatibus deleniti quaerat labore reprehenderit expedita dignissimos eius? Recusandae commodi officiis reprehenderit asperiores eum aut laborum quasi rem assumenda sequi nostrum quod in, error soluta harum natus veritatis animi quisquam doloremque laboriosam ratione. Tenetur assumenda sunt eius recusandae dolorem expedita impedit, praesentium quaerat voluptates quos porro repudiandae nobis dicta, architecto, adipisci asperiores. Enim, expedita. Beatae debitis incidunt atque recusandae aliquam ipsum optio laborum corrupti obcaecati, in libero eveniet necessitatibus, suscipit, consequuntur quaerat voluptates magnam ad. Quis aspernatur, corporis tenetur distinctio illum incidunt! Quidem distinctio magnam aut doloremque alias in soluta sequi nulla ipsam rem ad aliquid ullam magni commodi harum impedit nobis eius recusandae ut placeat, architecto natus velit. Vitae minima ratione atque quibusdam officia deserunt ipsam voluptatibus accusantium enim distinctio corrupti magnam facere cumque veritatis itaque eius fugiat, nam similique. Placeat nihil velit officia ad doloribus ipsam qui nulla expedita repudiandae! Modi nisi explicabo, quod commodi eum animi aliquam maiores doloribus omnis, culpa rem? Vero excepturi similique laboriosam cum praesentium explicabo nisi quod quas?&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-33" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta possimus corporis, officiis asperiores quibusdam dolorem nisi aspernatur. Corrupti minus voluptatum placeat libero quisquam ea, totam cumque accusamus ab rerum, tempora quod voluptatibus magni. Quisquam, error. Facilis laudantium deserunt dolor vitae sed et accusantium hic, quas natus voluptatem consequuntur blanditiis repudiandae saepe, odit fugiat sint, amet itaque maiores inventore. Harum amet repellendus error voluptatum ut eaque dicta, saepe, tempora voluptatibus deleniti quaerat labore reprehenderit expedita dignissimos eius? Recusandae commodi officiis reprehenderit asperiores eum aut laborum quasi rem assumenda sequi nostrum quod in, error soluta harum natus veritatis animi quisquam doloremque laboriosam ratione. Tenetur assumenda sunt eius recusandae dolorem expedita impedit, praesentium quaerat voluptates quos porro repudiandae nobis dicta, architecto, adipisci asperiores. Enim, expedita. Beatae debitis incidunt atque recusandae aliquam ipsum optio laborum corrupti obcaecati, in libero eveniet necessitatibus, suscipit, consequuntur quaerat voluptates magnam ad. Quis aspernatur, corporis tenetur distinctio illum incidunt! Quidem distinctio magnam aut doloremque alias in soluta sequi nulla ipsam rem ad aliquid ullam magni commodi harum impedit nobis eius recusandae ut placeat, architecto natus velit. Vitae minima ratione atque quibusdam officia deserunt ipsam voluptatibus accusantium enim distinctio corrupti magnam facere cumque veritatis itaque eius fugiat, nam similique. Placeat nihil velit officia ad doloribus ipsam qui nulla expedita repudiandae! Modi nisi explicabo, quod commodi eum animi aliquam maiores doloribus omnis, culpa rem? Vero excepturi similique laboriosam cum praesentium explicabo nisi quod quas?&lt;p&gt;&amp;nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta possimus corporis, officiis asperiores quibusdam dolorem nisi aspernatur. Corrupti minus voluptatum placeat libero quisquam ea, totam cumque accusamus ab rerum, tempora quod voluptatibus magni. Quisquam, error. Facilis laudantium deserunt dolor vitae sed et accusantium hic, quas natus voluptatem consequuntur blanditiis repudiandae saepe, odit fugiat sint, amet itaque maiores inventore. Harum amet repellendus error voluptatum ut eaque dicta, saepe, tempora voluptatibus deleniti quaerat labore reprehenderit expedita dignissimos eius? Recusandae commodi officiis reprehenderit asperiores eum aut laborum quasi rem assumenda sequi nostrum quod in, error soluta harum natus veritatis animi quisquam doloremque laboriosam ratione. Tenetur assumenda sunt eius recusandae dolorem expedita impedit, praesentium quaerat voluptates quos porro repudiandae nobis dicta, architecto, adipisci asperiores. Enim, expedita. Beatae debitis incidunt atque recusandae aliquam ipsum optio laborum corrupti obcaecati, in libero eveniet necessitatibus, suscipit, consequuntur quaerat voluptates magnam ad. Quis aspernatur, corporis tenetur distinctio illum incidunt! Quidem distinctio magnam aut doloremque alias in soluta sequi nulla ipsam rem ad aliquid ullam magni commodi harum impedit nobis eius recusandae ut placeat, architecto natus velit. Vitae minima ratione atque quibusdam officia deserunt ipsam voluptatibus accusantium enim distinctio corrupti magnam facere cumque veritatis itaque eius fugiat, nam similique. Placeat nihil velit officia ad doloribus ipsam qui nulla expedita repudiandae! Modi nisi explicabo, quod commodi eum animi aliquam maiores doloribus omnis, culpa rem? Vero excepturi similique laboriosam cum praesentium explicabo nisi quod quas?&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1155" y="570" width="685" height="630" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-34" value="RSS" style="text;spacingTop=-5;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-34" value="RSS" style="text;spacingTop=-5;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="730" y="1660.0000000000002" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-35" value="" style="line;strokeWidth=1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-35" value="" style="line;strokeWidth=1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="1650" width="780" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-36" value="Agami Blogs" style="text;spacingTop=-5;fontSize=18;fontStyle=0;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-36" value="Agami Blogs" style="text;spacingTop=-5;fontSize=18;fontStyle=0;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="1620" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-37" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-37" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="1610" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-38" value="RSS" style="text;spacingTop=-5;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-38" value="RSS" style="text;spacingTop=-5;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-500" y="490.0000000000001" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-39" value="" style="line;strokeWidth=1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-39" value="" style="line;strokeWidth=1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1220" y="480" width="780" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-40" value="Agami Blogs" style="text;spacingTop=-5;fontSize=18;fontStyle=0;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-40" value="Agami Blogs" style="text;spacingTop=-5;fontSize=18;fontStyle=0;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1170" y="450" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-41" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-41" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1220" y="440" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-45" value="©abhishek kumar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-45" value="©abhishek kumar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-883" y="1560" width="117" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-46" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-46" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-1200" y="1560" as="sourcePoint" />
             <mxPoint x="-478" y="1560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-48" value="©abhishek kumar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-48" value="©abhishek kumar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="356" y="2720" width="117" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-49" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-49" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="20" y="2720" as="sourcePoint" />
             <mxPoint x="742" y="2720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-50" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-50" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="39" y="2720" as="sourcePoint" />
             <mxPoint x="761" y="2720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="iazVjm7HrQ3wngAeaW7O-56" target="iazVjm7HrQ3wngAeaW7O-30">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="iazVjm7HrQ3wngAeaW7O-56" target="iazVjm7HrQ3wngAeaW7O-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-210" y="660" />
@@ -166,37 +166,64 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-56" value="Edit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-56" value="Edit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1040" y="640" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-59" value="All Articles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="hKfPVl_yZYr_U80e9J6K-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iazVjm7HrQ3wngAeaW7O-59" target="iazVjm7HrQ3wngAeaW7O-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1310" y="660" />
+              <mxPoint x="-1310" y="-120" />
+              <mxPoint x="208" y="-120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-59" value="All Articles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-1160" y="640" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-63" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-63" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="130" y="1790" width="570" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-64" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-64" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="128" y="1940" width="570" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-65" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-65" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="128" y="2210" width="570" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-66" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Edit article&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-66" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Edit article&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="1680" width="147" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-70" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Title&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-70" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Title&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="113.5" y="1750" width="96.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-71" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-71" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="128" y="1900" width="123" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-72" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Body&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-72" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Body&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="141.5" y="2165" width="67" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-75" value="Publish" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="hKfPVl_yZYr_U80e9J6K-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.009;entryY=0.448;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iazVjm7HrQ3wngAeaW7O-75" target="Ugrp3_h8G9npWypkSd74-80">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="2470" />
+              <mxPoint x="1110" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-75" value="Publish" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="2450" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="iazVjm7HrQ3wngAeaW7O-76" value="Cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="hKfPVl_yZYr_U80e9J6K-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iazVjm7HrQ3wngAeaW7O-76" target="iazVjm7HrQ3wngAeaW7O-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="2600" />
+              <mxPoint x="1420" y="2600" />
+              <mxPoint x="1420" y="-360" />
+              <mxPoint x="415" y="-360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iazVjm7HrQ3wngAeaW7O-76" value="Cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="2450" width="110" height="40" as="geometry" />
         </mxCell>
       </root>
