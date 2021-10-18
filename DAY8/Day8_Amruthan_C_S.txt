@@ -1,0 +1,52 @@
+Hi guys, a very busy day, can't make time for learning new, then I can only revise :) 
+This below code prints a pattern, 
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    int r;
+    scanf("%d",&n);
+    r=2*n-1;
+    int a[r][r],l=r-1;
+    printf("\n");
+    int q=r/2-1,p=r/2+1,e=1,d=l-1;
+    for(int i=1;i<r;i++)
+    {
+        if(i<r/2)
+        {
+            a[i][q]='X';
+            q--;
+            a[i][p]='X';
+            p++;
+        }
+        if(i>r/2)
+        {
+            a[i][e]='X';
+            e++;
+            a[i][d]='X';
+            d--;
+        }
+        
+        
+    }
+    
+    for(int i=0;i<r;i++)
+    {
+      for(int j=0;j<r;j++)
+      {
+          if(i==j||j==l||j==r-1||j==0||i==0||i==r-1||j==r/2||i==r/2)
+          a[i][j]='X';
+          else if(a[i][j]=='X')
+          {
+          printf("%c",a[i][j]);
+          continue;
+          }
+          else
+          a[i][j]='-';
+          printf("%c",a[i][j]);
+      }
+      l--;
+      printf("\n");
+    }
+}
