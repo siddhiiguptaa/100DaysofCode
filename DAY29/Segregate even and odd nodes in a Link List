@@ -1,0 +1,25 @@
+class Solution{
+public:
+    Node* divide(int N, Node *head)
+    {
+        // code here
+        auto prev = new Node(-1), head2 = new Node(-1); 
+        prev->next = head, head = prev;
+        auto cur = prev->next, cur2 = head2;
+        while (cur) 
+        {
+            if (cur->data & 1) 
+            {
+                prev->next = cur->next;
+                cur2->next = cur, cur2 = cur;
+            }
+            else prev = cur;
+            cur = cur->next;
+        }
+        cur2->next = nullptr;
+        prev->next = head2->next;
+        return head->next;
+    }
+};
+
+#driver code
