@@ -18,7 +18,7 @@ code {
 .counter-div{
     margin-top: 200px !important;
   /* margin: 10px 50px 20px; */
-      border: 5px solid black !important;
+      border:0 solid black !important;
       border-radius: 12px;
       box-shadow: 0px 10px 30px rgba(21, 20, 20, 0.487);
       padding:1.2rem;
