@@ -17,36 +17,57 @@
 
     <!-- container -->
     <div class="container">
-        <h1>Your custom countdown !</h1>
-        <form class="form" id="countdownForm">
-            <label 
-                for="title">
-                Title
-            </label>
-            <input 
-                type="text" 
-                name="inputTitle" 
-                id="title" 
-                placeholder="what are you counting down to?"
-                >
-            <label 
-                for="date-picker"
-                >
-                Select a Date
-            </label>
-            <input 
-                type="date" 
-                name="inputDate" 
-                id="date-picker"
-                >
-            <button 
-                type="submit" 
-                id="submit" 
-                name="submit"
-                >
-                Submit
-            </button>
-        </form>
+        <div class="input-container" id="input-container" hidden>
+            <h1>Your custom countdown!</h1>
+            <form class="form" id="countdownForm">
+                <label
+                    for="title">
+                    Title
+                </label>
+                <input
+                    type="text"
+                    name="inputTitle"
+                    id="title"
+                    placeholder="what are you counting down to?"
+                    >
+                <label
+                    for="date-picker"
+                    >
+                    Select a Date
+                </label>
+                <input
+                    type="date"
+                    name="inputDate"
+                    id="date-picker"
+                    >
+                <button
+                    type="submit"
+                    id="submit"
+                    name="submit"
+                    >
+                    Submit
+                </button>
+            </form>
+        </div>
+        <!-- countdown -->
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title">
+                Countdown Title here
+            </h1>
+            <ul>
+                <li><span>365</span>Days</li>
+                <li><span>24</span>Hours</li>
+                <li><span>60</span>Minutes</li>
+                <li><span>30</span>Seconds</li>
+            </ul>
+            <button type="submit" id="countdown-button" name="reset">Reset</button>
+        </div> 
+        <!-- complete countdown -->
+        <div class="complete" id="complete">
+            <h1 id="complete-title">Countdown Complete!</h1>
+            <h1 id="conplete-info">countdown finished on 05-05-2021</h1>
+            <button id="complete-button">new countdown</button>
+        </div>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
