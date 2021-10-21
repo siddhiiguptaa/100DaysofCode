@@ -144,10 +144,10 @@ li span {
   top: 60px;
 }
 .complete-title{
-  animation: complete 4s infinite;
+  animation: title ease-in 5s infinite reverse;
 }
 
-@keyframes complete {
+@keyframes title {
   0%{
     color:#ff0000;
   }
@@ -156,6 +156,7 @@ li span {
   }
   50%{
     color:#5df803;
+    transform: scale(1.5);
 
   }
   75%{
@@ -163,7 +164,7 @@ li span {
 
   }
   100%{
-    color:#8c00ff;
+    color:#ff004c;
 
   }
 }
