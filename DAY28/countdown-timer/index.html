@@ -14,6 +14,40 @@
     </video>
     <!-- video overlay -->
     <div class="video-overlay"></div>
+
+    <!-- container -->
+    <div class="container">
+        <h1>Your custom countdown !</h1>
+        <form class="form" id="countdownForm">
+            <label 
+                for="title">
+                Title
+            </label>
+            <input 
+                type="text" 
+                name="inputTitle" 
+                id="title" 
+                placeholder="what are you counting down to?"
+                >
+            <label 
+                for="date-picker"
+                >
+                Select a Date
+            </label>
+            <input 
+                type="date" 
+                name="inputDate" 
+                id="date-picker"
+                >
+            <button 
+                type="submit" 
+                id="submit" 
+                name="submit"
+                >
+                Submit
+            </button>
+        </form>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
