@@ -65,7 +65,7 @@ video {
 
 h1 {
   font-size: 35px;
-  position: fixed;
+  /* position: fixed; */
   font-variant-caps: all-small-caps;
   text-align: center;
   margin-top: 0;
@@ -90,6 +90,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
+  font-family: monospace;
 
 }
 
@@ -101,21 +102,30 @@ button {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
-  background: #006959;
+  background: #549100;
   color: white;
   cursor: pointer;
   outline: none;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-
+button:hover{
+  filter: brightness(120%);
+  text-transform: full-size-kana;
+  font-weight: bold;
+}
 
 /* Countdown */
 ul {
   margin-left: -45px;
+
 }
 
 li {
 
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -133,7 +143,30 @@ li span {
   position: relative;
   top: 60px;
 }
+.complete-title{
+  animation: complete 4s infinite;
+}
 
+@keyframes complete {
+  0%{
+    color:#ff0000;
+  }
+  25%{
+    color:#ffee00;
+  }
+  50%{
+    color:#5df803;
+
+  }
+  75%{
+    color:#00aeff;
+
+  }
+  100%{
+    color:#8c00ff;
+
+  }
+}
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
