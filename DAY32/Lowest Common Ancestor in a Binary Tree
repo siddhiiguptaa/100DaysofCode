@@ -1,0 +1,35 @@
+class Solution:
+    #Function to return the lowest common ancestor in a Binary Tree.
+    def lca(self,root, n1, n2):
+        # Code here
+        def findRoute(root, val):
+            nonlocal route, ans
+            
+            if root is None:
+                return False
+            
+            if root.data == val:
+                if ans.data == -1 and root in route:
+                    ans = root
+                else:
+                    route.add(root)
+                return True
+                
+            if findRoute(root.left, val) or findRoute(root.right, val):
+                if ans.data == -1 and root in route:
+                    ans = root
+                else:
+                    route.add(root)
+                return True
+                
+            return False
+                    
+            
+        ans = Node(-1)
+        route = set()
+        findRoute(root, n1)
+        findRoute(root, n2)
+
+        return ans
+
+#driver code
