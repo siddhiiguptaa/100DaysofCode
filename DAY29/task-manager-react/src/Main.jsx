@@ -9,15 +9,19 @@ export default function Main() {
             setTaskList([...taskList, taskName])
     }
 
-    const taskListContent = taskList.map((task)=>{
+    function deleteTask(index){
+        let taskListCopy = [...taskList]
+        taskListCopy.splice(index, 1)
+        setTaskList(taskListCopy)
+    }
+
+    const taskListContent = taskList.map((task,index) => {
         return (
             <div>
                 <p>
                     {task}
                 </p>
-                <button>
-                    delete
-                </button>
+               <i className="fa fa-trash-o" onClick={() => deleteTask(index)} ></i>
             </div>
         )
     })
@@ -29,7 +33,7 @@ export default function Main() {
                 className="col-md-5 shadow-lg p-3 mb-5 bg-white rounded"
                 >
                 <h1>
-                    The task Scheduler
+                    The task list
                 </h1>
                 <input 
                     type="text" 
