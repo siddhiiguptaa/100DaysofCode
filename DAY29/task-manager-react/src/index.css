@@ -32,3 +32,8 @@ input{
 button{
   margin-left: 20px !important;
 }
+p{
+  font-weight: bold !important;
+  display:inline !important;
+  margin: 20px;
+}
