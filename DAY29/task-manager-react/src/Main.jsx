@@ -33,7 +33,7 @@ export default function Main() {
                 className="col-md-5 shadow-lg p-3 mb-5 bg-white rounded"
                 >
                 <h1>
-                    The task list
+                    the task list
                 </h1>
                 <input 
                     type="text" 
