@@ -1,0 +1,36 @@
+class Solution
+{
+	public:
+	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        // code here
+        vector<bool> visited(V, false);
+        vector<int> cost(V, INT_MAX);
+        typedef pair<int, int> pii;
+        set<pii> S;
+        for (auto& e : adj[0]) 
+        {
+            S.insert({e[1], e[0]});
+            cost[e[0]] = e[1];
+        }
+        for (int i = 0; i < V; i++)
+            if (cost[i] == INT_MAX) S.insert({INT_MAX, i});
+        visited[0] = true; int ans = 0;
+        while (!S.empty()) 
+        {
+            pii e = *S.begin(); S.erase(S.begin());
+            if (visited[e.second]) continue;
+            visited[e.second] = true; ans += e.first;
+            for (auto &e_ : adj[e.second]) {
+                if (visited[e_[0]] || e_[1] >= cost[e_[0]]) continue;
+                S.erase(S.find({cost[e_[0]], e_[0]}));
+                S.insert({e_[1], e_[0]});
+                cost[e_[0]] = e_[1];
+            }
+        }
+        return ans;
+    }
+};
+
+#driver code
