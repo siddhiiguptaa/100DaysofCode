@@ -1,0 +1,19 @@
+#struct
+class Solution 
+{
+    int dfs(Node *root, int par) 
+    {
+        if(!root) return 0;
+        if(root->data > par) return -1;
+        int left = dfs(root->left, root->data);
+        int right = dfs(root->right, root->data);
+        if(left == -1 || right == -1 || left - right < 0 || left - right > 1) return -1;
+        return left + 1;
+    }
+  public:
+    bool isHeap(struct Node* root) 
+    {
+        return dfs(root, INT_MAX) != -1;
+    }
+};
+#driver code
