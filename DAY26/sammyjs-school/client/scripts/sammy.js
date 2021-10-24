@@ -268,7 +268,13 @@
           !this.app.disable_push_state &&
           /^\//.test(new_location)
         ) {
-          history.pushState({ path: new_location }, window.title, new_location);
+          history.pushState(
+            {
+              path: new_location,
+            },
+            window.title,
+            new_location
+          );
           this.app.trigger("location-changed");
         } else {
           return (window.location = new_location);
@@ -548,7 +554,9 @@
           app._listen(name, listener_callback);
         });
       });
-      this.trigger("run", { start_url: start_url });
+      this.trigger("run", {
+        start_url: start_url,
+      });
       this._running = true;
       this.last_location = null;
       if (
@@ -643,13 +651,19 @@
       if (this.debug) {
         this.log("runRoute", [verb, path].join(" "));
       }
-      this.trigger("run-route", { verb: verb, path: path, params: params });
+      this.trigger("run-route", {
+        verb: verb,
+        path: path,
+        params: params,
+      });
       if (typeof params == "undefined") {
         params = {};
       }
       $.extend(params, this._parseQueryString(path));
       if (route) {
-        this.trigger("route-found", { route: route });
+        this.trigger("route-found", {
+          route: route,
+        });
         if ((path_params = route.path.exec(this.routablePath(path))) !== null) {
           path_params.shift();
           $.each(path_params, function (i, param) {
@@ -682,7 +696,9 @@
             }
           }
           app.last_route = route;
-          context.trigger("event-context-before", { context: context });
+          context.trigger("event-context-before", {
+            context: context,
+          });
           if (typeof route.callback === "function") {
             route.callback = [route.callback];
           }
@@ -702,7 +718,9 @@
             callback_args.push(nextRoute);
             nextRoute();
           }
-          context.trigger("event-context-after", { context: context });
+          context.trigger("event-context-after", {
+            context: context,
+          });
           return returned;
         };
         $.each(arounds.reverse(), function (i, around) {
@@ -724,7 +742,9 @@
     contextMatchesOptions: function (context, match_options, positive) {
       var options = match_options;
       if (typeof options === "string" || _isRegExp(options)) {
-        options = { path: options };
+        options = {
+          path: options,
+        };
       }
       if (typeof positive === "undefined") {
         positive = true;
@@ -736,7 +756,9 @@
         var results, numopt, opts, len;
         results = [];
         for (numopt = 0, len = options.path.length; numopt < len; numopt += 1) {
-          opts = $.extend({}, options, { path: options.path[numopt] });
+          opts = $.extend({}, options, {
+            path: options.path[numopt],
+          });
           results.push(this.contextMatchesOptions(context, opts));
         }
         var matched = $.inArray(true, results) > -1 ? true : false;
@@ -839,7 +861,9 @@
     },
     _checkFormSubmission: function (form) {
       var $form, path, verb, params, returned;
-      this.trigger("check-form-submission", { form: form });
+      this.trigger("check-form-submission", {
+        form: form,
+      });
       $form = $(form);
       path = $form.attr("action") || "";
       verb = this._getFormVerb($form);
@@ -1215,7 +1239,9 @@
     trigger: function (name, data) {
       return this.then(function (content) {
         if (typeof data == "undefined") {
-          data = { content: content };
+          data = {
+            content: content,
+          };
         }
         this.event_context.trigger(name, data);
         return content;
@@ -1319,7 +1345,9 @@
       } else {
         to = args[0];
       }
-      this.trigger("redirect", { to: to });
+      this.trigger("redirect", {
+        to: to,
+      });
       this.app.last_location = [this.verb, this.path];
       this.app.setLocation(to);
       if (new RegExp(to).test(current_location)) {

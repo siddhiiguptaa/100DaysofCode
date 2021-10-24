@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Countdown</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- video background -->
+    <video class="video-background" id="clock"  loop muted autoplay="true"> 
+        <source src="./Time.mp4" ></source>
+    </video>
+    <!-- video overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- container -->
+    <div class="container">
+        <!-- input container -->
+        <div class="input-container" id="input-container" >
+            <h1>Your custom countdown!</h1>
+            <form class="form" id="countdownForm">
+                <label
+                    for="title">
+                    Title
+                </label>
+                <input
+                    type="text"
+                    name="inputTitle"
+                    id="title"
+                    placeholder="what are you counting down to?"
+                    >
+                <label
+                    for="date-picker"
+                    >
+                    Select a Date
+                </label>
+                <input
+                    type="date"
+                    name="inputDate"
+                    id="date-picker"
+                    >
+                <button
+                    type="submit"
+                    id="submit"
+                    name="submit"
+                    >
+                    submit
+                </button>
+            </form>
+        </div>
+        <!-- countdown -->
+        <div 
+            class="countdown" 
+            id="countdown" 
+            hidden
+            >
+            <h1 
+                id="countdown-title"
+                >
+                <!-- Countdown Title here -->
+            </h1>
+            <ul>
+                <li>
+                    <span>
+                        <!-- 365 -->
+                    </span>
+                        Days
+                </li>
+                <li>
+                    <span>
+                        <!-- 24 -->
+                    </span>
+                    Hours
+                </li>
+                <li>
+                    <span>
+                        <!-- 60 -->
+                    </span>
+                    Minutes
+                </li>
+                <li>
+                    <span>
+                        <!-- 60 -->
+                    </span>
+                    Seconds
+                </li>
+            </ul>
+            <button 
+                type="submit" 
+                id="countdown-button" 
+                name="reset"
+                >
+                Reset
+            </button>
+        </div> 
+        <!-- complete countdown -->
+        <div 
+            class="complete" 
+            id="complete"
+            hidden
+            >
+            <h1 
+                class="complete-title"
+                >
+                Countdown Complete!
+            </h1>
+            <h1 
+                id="complete-info"
+                >
+                <!-- countdown finished on 05-05-2021 -->
+            </h1>
+            <button 
+                id="complete-button"
+                >
+                new countdown
+            </button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

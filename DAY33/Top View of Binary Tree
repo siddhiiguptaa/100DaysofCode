@@ -1,0 +1,49 @@
+class Solution
+{
+    public:
+    //Function to return a list of nodes visible from the top view 
+    //from left to right in Binary Tree.
+        map<int,pair<int,int>> mp;
+    // this map stores key value pair of -- key:horizontal position w.r.t root 
+    // and value: { level of element , data }
+    void findtop(Node *root,int hl,int l){
+        if(!root) return;  
+        // first we go in leftmost part of the tree 
+        // also for each left part horizontal level decreased by 1
+        // and vertical level increases by 1
+        findtop(root->left,hl-1,l+1);
+        
+        // for any node
+        // we check whether that horizontal level is already there or not
+        // if it's not then just add it
+        // but if it was already there then store minimum vertical level as value of that
+        if(mp.find(hl)!=mp.end()){
+            if(mp[hl].first>l){
+                mp[hl]={l,root->data};
+            }
+        }else{
+            mp[hl]={l,root->data};
+        }
+        
+        // call recursion for right part of the tree also
+        findtop(root->right,hl+1,l+1);
+    }
+    vector<int> topView(Node *root)
+    {
+        //Your code here
+          mp.clear();
+          vector<int> res;
+          findtop(root,0,0);  // 0 0 is horizontal and vertical level of root
+          
+            
+          // everything is stored in map in sorted order
+          // just add the root->data of all horizontal level in a vector
+          for(auto x:mp){
+              res.push_back(x.second.second);
+          }    
+          return res;
+    }
+
+};
+
+#driver code
