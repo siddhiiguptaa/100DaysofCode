@@ -1,0 +1,53 @@
+def My_Juggle(a, b, c):
+    return(c, a, b)
+Candies = 10
+Chocolate = 20
+CupCakes = 30
+
+Candies, Chocolate, CupCakes = My_Juggle(Candies, Chocolate, CupCakes)
+print("Candies", Candies)
+print("Chocolate", Chocolate)
+print("CupCakes", CupCakes)
+
+def My_Juggle(a, b, c):
+    Temp = a
+    A=c
+    C=b
+    B=Temp
+
+    return(a, b, c)
+
+Candies = 10
+Chocolate = 20
+CupCakes = 30
+
+Candies, Chocolate, CupCakes = My_Juggle(Candies, Chocolate, CupCakes)
+print("Candies", Candies)
+print("Chocolate", Chocolate)
+print("CupCakes", CupCakes)
+
+def MySquare(z=5):
+    return(z*z)
+    
+a = MySquare()
+print("The square is", a)
+
+ch=eval(input("Do you want to enter the value y=1, n=0"))
+if ch==1:
+    x=eval(input("Enter the value"))
+    A=MySquare(x)
+    print(A)
+else:
+    A=MySquare()
+    print(A)
+
+ch1=eval(input("Enter to use Myapplier function 1=y  n=0"))
+if ch1 == 1:
+    def Myapplier(j):
+        B=eval(input("Enter the number:"))
+        return(j(B))
+        
+Res=Myapplier(MySquare)
+print("The Resultant is:", Res)
+
+#I don't really know python to write the code in it, but i'm really looking forward to learn it and explore it, also in my college they're taking these python programming labs, so this code was something that i typed in my lab lecture, ofcourse by seeing it on ma'am's screen, but here i typed this one because i really wanna get started with python and thought this would be a great practice, even here i typed the code by looking on to the screenshots, but would definitely try to code on my in python soon. Guess this doesn't make you go angry on me. But if it does then really sorry. Till then keep guiding and supporting.
