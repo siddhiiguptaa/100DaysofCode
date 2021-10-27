@@ -1,0 +1,24 @@
+class Solution{
+    public:
+    string convert(string s, int n) 
+    {
+        //code
+        if(n==1) return s;
+        string temp[n];
+        string sol ="";
+        bool down;
+        int row = 0;
+        for(int i = 0; i < s.length();i++)
+        {
+            temp[row].push_back(s[i]);
+            if(row == n-1) down = false;
+            if(row == 0) down = true;
+            down?row++:row--;
+        }
+        for(int i = 0; i<n;i++) sol+=temp[i];
+        return sol;
+        
+    }
+};
+
+#driver code
