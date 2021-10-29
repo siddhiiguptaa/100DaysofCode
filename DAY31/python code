@@ -1,0 +1,36 @@
+Engineers=set()
+Managers=set()
+#creation of empty set
+print("The set engineers is",Engineers);
+print("The set managers is",Managers);
+#Using input method add elements in ‗Engineers‘ and ‗Managers‘
+print("Enter the Name of engineers:")
+for i in range(1,5):
+    Engineers.add(input())
+print("Enter the name of engineers:",Engineers)
+print("Enter the name of Managers:")
+for i in range(1,5):
+    Managers.add(input())
+print("Enter the name of Managers:",Managers)
+#display
+print("3)Display")
+for i in Engineers:
+    print("Name of Engineers:",i)
+#convert manager set into tuple
+My_manager=tuple(Managers)
+print("After conversion into tuple:",My_manager)
+#Convert Engineers into list
+My_engineer=list(Engineers)
+print("After conversion into list:",My_engineer)
+#Add data into manager
+Managers.add('option')
+print("After adding into Managers:",Managers)
+#mergetwosets
+My_Set=Engineers.union(Managers)
+print("After merging the value is",My_Set)
+#print all those who are not managers
+print("All those engineers who are not managers:",Engineers-Managers)
+#intersection
+print("All those engineers who are Managers",Engineers.intersection(Managers))
+#all those who are either engineer or manager but not both
+print("The person who is either engineer or manager but not both:",Engineers.union(Managers)-Engineers.intersection(Managers))
