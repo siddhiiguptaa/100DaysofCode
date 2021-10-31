@@ -1,0 +1,27 @@
+class Solution{
+    public:
+    int maxSumPairWithDifferenceLessThanK(int arr[], int N, int K)
+    {
+        // Your code goes here   
+        sort(arr,arr+N);
+        int i=N-1,j=N-2;
+        int ans=0;
+        while(j>=0)
+        {
+            if(arr[i]-arr[j]<K)
+            {
+                ans+=arr[i]+arr[j];
+                i-=2;
+                j-=2;
+            }
+            else
+            {
+                i--;
+                j--;
+            }
+        }
+        return ans;
+    }
+};
+
+#driver code
