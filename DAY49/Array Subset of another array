@@ -1,0 +1,20 @@
+string isSubset(int a1[], int a2[], int n, int m) {
+   if(m > n)
+       return "No";
+   int hs[100001]={0};
+   for(int i=0; i<m; i++)
+       hs[a2[i]]=1;
+   
+   int ct=0;
+   for(int i=0; i<n; i++)
+   {
+       if(hs[a1[i]]==1)
+           ++ct;
+   }
+   
+   if(ct == m)
+     return "Yes";
+   return "No";
+}
+
+#driver code
