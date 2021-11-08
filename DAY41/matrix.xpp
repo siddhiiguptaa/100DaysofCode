@@ -1,0 +1,39 @@
+// 
+//1 2 3 5
+//4 5 6 7
+//6 7 8 0    .... 1 5 8 .. 3 5 6 ,,,, 1 i =0,j=0 ;
+//4 7 0 0
+// 3 i=0;j=2  6 ->2,0
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+int sum(vector<vector<int>> matrix){
+    int n = matrix.size();
+    int sum_l =0;
+    int sum_r =0;
+    int ans =0;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+           if(i == j){
+               sum_l += matrix[i][j];
+           }
+               if(i + j == n-1){ 
+               sum_r += matrix[i][j];
+           }
+        }
+    }
+    ans = sum_l + sum_r;
+    return ans;
+}
+int main(){
+    vector<vector<int>> v = {{1, 2,3},{2, 6, 7}, {4, 5, 6}};
+    int n = sizeof(v)/sizeof(v[0]);
+    cout << " sum of diagonal elements ";
+    cout << sum(v);
+}
+   
+
+//1 2 3
+//2 6 7
+//4 5 6
