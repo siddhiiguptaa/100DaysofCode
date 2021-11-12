@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <string.h>
+
+int getDecimal(char ch)
+{
+    int num = 0;
+    switch (ch) {
+    case 'I':
+        num = 1;
+        break;
+
+    case 'V':
+        num = 5;
+        break;
+
+    case 'X':
+        num = 10;
+        break;
+
+    case 'L':
+        num = 50;
+        break;
+
+    case 'C':
+        num = 100;
+        break;
+
+    case 'D':
+        num = 500;
+        break;
+
+    case 'M':
+        num = 1000;
+        break;
+
+    case '\0':
+        num = 0;
+        break;
+
+    default:
+        num = -1;
+    }
+    return num;
+}
+
+int main()
+{
+    char romanNum[32] = { 0 };
+    int i = 0;
+    long int result = 0;
+
+    printf("Enter roman number: ");
+    scanf("%s", romanNum);
+
+    while (romanNum[i]) {
+        if ((strlen(romanNum) - i) > 2) {
+            if (getDecimal(romanNum[i]) < getDecimal(romanNum[i + 2])) {
+                printf("Given number is not valid roman number");
+                return 0;
+            }
+        }
+
+        if (getDecimal(romanNum[i]) >= getDecimal(romanNum[i + 1])) {
+            result = result + getDecimal(romanNum[i]);
+        }
+        else {
+            result = result + (getDecimal(romanNum[i + 1]) - getDecimal(romanNum[i]));
+            i++;
+        }
+        i++;
+    }
+    printf("Decimal number : %ld", result);
+
+    return 0;
+}
