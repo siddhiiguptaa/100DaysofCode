@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char* argv[])
+{
+    int option = 0;
+
+    while ((option = getopt(argc, argv, ":if:lrx")) != -1) {
+        switch (option) {
+        case 'i':
+        case 'l':
+        case 'r':
+            printf("option: %c\n", option);
+            break;
+        case 'f':
+            printf("filename: %s\n", optarg);
+            break;
+        case ':':
+            printf("Option needs a value\n");
+            break;
+        case '?':
+            printf("unknown option: %c\n", optopt);
+            break;
+        }
+    }
+
+    while (optind < argc) {
+        printf("Extra arguments: %s\n", argv[optind]);
+        optind++;
+    }
+
+    return 0;
+}
