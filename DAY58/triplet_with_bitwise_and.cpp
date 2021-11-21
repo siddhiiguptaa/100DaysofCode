@@ -1,0 +1,1 @@
+solve(c , r,i, j);
