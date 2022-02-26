@@ -1,0 +1,26 @@
+from nested_data import albums
+
+SONGS_LIST_INDEX = 3  #  constants are represented by capital letters in python 
+SONG_TITLE_INDEX = 1
+while True:
+    print("Please choose your album (invalid choice exits): ")
+    for index, (title, artist, year, songs) in enumerate(albums):
+        print("{}: {}".format(index + 1, title))
+    
+    choice = int(input())
+    if 1 <= choice <= len(albums):
+        songs_list = albums[choice - 1][SONGS_LIST_INDEX]  #  here this [3] is used because songs are at index 3 in the list of albums
+    else:
+        break
+        
+
+    print("Please choose your song: ")
+    for index, (track_number, song) in enumerate(songs_list):  #  unpacking ofa tuple 
+        print("{}: {}".format(index + 1, song))
+
+    song_choice = int(input())
+    if 1 <= song_choice <= len(songs_list):
+        title = songs_list[song_choice - 1][SONG_TITLE_INDEX]
+
+        print("Playing {}".format(title))
+    print("=" * 40)
